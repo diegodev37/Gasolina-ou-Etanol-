@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasolina ou Álcool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <img class="img-bomba" src="assets/bomba-de-gasolina.png" alt="imagem de bomba">
+
+        <h1>Qual a melhor opção?</h1>
+
+        <p>Álcool (preço por litro)</p>
+        <input type="number" step="0,01" id="alcool" class="input-alcool" placeholder="Preço do Álcool ">
+
+        <p>Gasolina (preço por litro)</p>
+        <input type="number" step="0.01" id="gasolina" class="input-gasolina" placeholder="Preço da Gasolina">
+
+        <button onClick="calcular()" class="convert-button">Calcular</button>
+        <section>
+            <P id="resultado">
+
+                Quando o resultado é menor que 0,7, a recomendação é abastecer com álcool. Se maior, a recomendação é
+                escolher a gasolina.
+
+                Exemplo: se o álcool custa R$ 3,29 e a gasolina R$ 4,92, o resultado da divisão do primeiro pelo segundo
+                é
+                0,67, menor que 0,7. Portanto, é mais vantajoso abastecer com álcool.
+            </P>
+        </section>
+
+
+
+    </main>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
